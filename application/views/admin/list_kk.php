@@ -9,7 +9,7 @@
                                     <h4 class="page-title">Data Table</h4>
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="javascript:Eventvoid(0);">Tables</a></li>
-                                        <li class="breadcrumb-item active">Table List Event</li>
+                                        <li class="breadcrumb-item active">Table List Data KK</li>
                                     </ol>
 
                                 </div>
@@ -22,25 +22,17 @@
                                 <div class="card">
                                     <div class="card-body">
 
-                                        <h4 class="mt-0 header-title">List Event</h4>
-                                        <div class="form-group row">
-                                            <label class="col-sm-1 col-form-label">Outlets</label>
-                                            <div class="col-sm-3">
-                                                <select class="form-control" id="id_master_outletss" name="">
-                                                <option>Select</option>
-                                            </select>
-                                            </div>
-                                        </div>
+                                        <h4 class="mt-0 header-title">List KK</h4>
+                                        
 
                                         <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                             <thead>
                                             <tr>
                                                 <th>No</th>
-                                                <th>Event Name</th>
-                                                <th>Outlets</th>
-                                                <th>Event Date</th>
-                                                <th>Description</th>
-                                                <th>Reservation URL</th>
+                                                <th>Nomor KK</th>
+                                                <th>Nama Kepala Keluarga</th>
+                                                <th>Tanggal Masuk</th>
+                                                <th>Deskripsi</th>
                                                 <th>Action</th>
                                                 
                                             </tr>
@@ -49,14 +41,55 @@
 
                                             <tbody>
                                             
-                                            
+                                            <tr>
+                                                <td>1</td>
+                                                <td>123456879</td>
+                                                <td>Fiqri </td>
+                                                <td>02/03/2022</td>
+                                                <td>Tambah Anggota</td>
+                                                <td>
+                                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit data" class="btn btn-primary" onclick="javascript:showModalEdit();return false;">
+                                                        <span class="ion ion-md-create"></span>  
+                                                    </a>
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>32515897556</td>
+                                                <td>Ashiddiqi </td>
+                                                <td>02/03/2022</td>
+                                                <td>KK Baru</td>
+                                                <td>
+                                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit data" class="btn btn-primary" onclick="javascript:showModalEdit();return false;">
+                                                        <span class="ion ion-md-create"></span>  
+                                                    </a>
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>235459789523</td>
+                                                <td>John Doe</td>
+                                                <td>02/03/2022</td>
+                                                <td>Tambah Anggota</td>
+                                                <td>
+                                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit data" class="btn btn-primary" onclick="javascript:showModalEdit();return false;">
+                                                        <span class="ion ion-md-create"></span>  
+                                                    </a>
+                                                </td>
+                                                
+                                            </tr>
                                             
                                             </tbody>
                                         </table>
-
+                                        <button type="submit" class="btn btn-success" onclick="tinyMCE.triggerSave(true,true);">Proses</button>
                                     </div>
                                 </div>
-                            </div> <!-- end col -->
+                                
+                            </div>
+                             <!-- end col -->
+                             
                         </div> <!-- end row -->
                     </div>
                     <!-- container-fluid -->
@@ -183,31 +216,7 @@
                 <!-- END MODAL EDIT -->
                 <script type="text/javascript">
                     $(document).ready(function(){
-                        loadMasterOutlet();
-                        loadMasterOutletSearch();
-
-                        var table = $('#datatable').DataTable({
-                            "processing": true,
-                            "serverSide": true,
-                            "ajax": {
-                                // "url" : "http://localhost:3000/api/v1/list-all-events",
-                                "url" : "<?php echo URL_API;?>/api/v1/list-all-events",
-                                // "url" : "http://192.168.0.15:8090/api/v1/master-guru-karyawan-datatable ",
-                                "type" : "POST",
-                                "headers" : 
-                                {
-                                    "Authorization":"Bearer <?php echo $this->session->userdata('sess_token');?>",
-                                    "ax_users_id":"<?php echo $this->session->userdata('sess_id');?>"
-                                },
-                                "ColumnDefs":[{
-                                    "targets":[ 0 ],
-                                    "orderable": false,
-                                }]
-                            }
-                        });
-                        $('#id_master_outletss').on( 'change', function () {
-                            table.search( this.value ).draw();
-                        } );
+                        
                     });
                     function loadMasterOutlet(){
                         $.ajax({

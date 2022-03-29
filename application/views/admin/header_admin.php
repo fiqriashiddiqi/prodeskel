@@ -130,7 +130,7 @@
                                     <a href="javascript:void(0)" class="waves-effect"><i class="ti-clipboard"></i><span> Data KK <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
                                     <ul class="submenu">
                                         <li><a href="<?php echo site_url('admin/tambah_kk');?>"> Tambah Data KK</a></li>
-                                        <li><a href="<?php echo site_url('admin/report_membership');?>"> List Data KK </a></li>
+                                        <li><a href="<?php echo site_url('admin/list_kk');?>"> List Data KK </a></li>
                                         
                                     </ul>
                                     
@@ -139,8 +139,8 @@
                                 <li>
                                     <a href="javascript:void(0)" class="waves-effect"><i class="ti-clipboard"></i><span> Mutasi<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
                                     <ul class="submenu">
-                                        <li><a href="<?php echo site_url('admin/report');?>"> Tambah Mutasi </a></li>
-                                        <li><a href="<?php echo site_url('admin/report_membership');?>"> List Mutasi</a></li>
+                                        <li><a href="<?php echo site_url('admin/tambah_mutasi');?>"> Tambah Mutasi </a></li>
+                                        <li><a href="<?php echo site_url('admin/list_mutasi');?>"> List Mutasi</a></li>
                                         
                                     </ul>
                                     

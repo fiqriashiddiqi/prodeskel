@@ -1,0 +1,228 @@
+<div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="page-title-box">
+                            <div class="row align-items-center">
+                                
+                                <div class="col-sm-6">
+                                    <h4 class="page-title">Data KK Baru</h4>
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="javascript:void(0);">Data KK Baru</a></li>
+                                        <li class="breadcrumb-item active">Form Data KK Baru</li>
+                                    </ol>
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                       
+        
+                                        <form id="form-data" enctype="multipart/form-data">
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-sm-3 col-form-label">Kode Keluarga (Nomor KK)</label>
+                                                <div class="col-sm-10">
+                                                    <input type="number" class="form-control" id="nama_promo" name="nama_promo">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-sm-3 col-form-label">NIK</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="nama_promo" name="nama_promo">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-sm-2 col-form-label">Nama Lengkap</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="nama_promo" name="nama_promo">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                                                <div class="col-sm-3">
+                                                    <select class="form-control" id="id_master_outlets" name="id_master_outlets" required>
+                                                        <option>Laki-laki</option>
+                                                        <option>Perempuan</option>  
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 col-form-label">Hubungan Keluarga</label>
+                                                <div class="col-sm-3">
+                                                    <select class="form-control" id="id_master_outlets" name="id_master_outlets" required>
+                                                        <option>Anak Kandung</option>
+                                                        <option>Istri</option> 
+                                                        <option>Dll</option>  
+                                                    </select>
+                                                </div>
+                                            </div>  
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-sm-3 col-form-label">Tempat Lahir</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="nama_promo" name="nama_promo">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-sm-3 col-form-label">Tanggal Lahir</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="nama_promo" name="nama_promo">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-sm-3 col-form-label">Proses Mutasi Keluar</label><br>
+                                                <label for="example-text-input" class="col-sm-3 col-form-label">Nomor Mutasi</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="nama_promo" name="nama_promo" value="4" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-sm-3 col-form-label">Tanggal lapor *</label>
+                                                <div class="col-sm-2">
+                                                        
+                                                    <div>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" placeholder="yyyy-mm-dd" id="datepicker1" name="end_date">
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                            </div>
+                                                        </div><!-- input-group -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 col-form-label">Jenis Mutasi *</label>
+                                                <div class="col-sm-3">
+                                                    <select class="form-control" id="id_master_outlets" name="id_master_outlets" required>
+                                                        <option>Meninggal Dunia</option>
+                                                        <option>Pindah Alamat</option> 
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 col-form-label">Penyebab Kematian *</label>
+                                                <div class="col-sm-3">
+                                                    <select class="form-control" id="id_master_outlets" name="id_master_outlets" required>
+                                                        <option>Sakit</option>
+                                                        <option>Kecelakaan lalu Lintas</option> 
+                                                        <option>Perkelahian/Tawuran</option>
+                                                        <option>Peristiwa Kriminal</option> 
+                                                        <option>Kerusuhan Massal</option>  
+                                                        <option>Wabah Penyakit Menular</option> 
+                                                        <option>Bencana Alam</option>    
+                                                    </select>
+                                                </div>
+                                            </div>    
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-sm-4 col-form-label">* Field yang wajib diisi</label>
+
+                                            </div> 
+                                            <button type="submit" class="btn btn-success" onclick="tinyMCE.triggerSave(true,true);">Submit</button>
+                                            
+                                        </form>
+        
+                                    </div>
+                                </div>
+                            </div> <!-- end col -->
+                        </div> <!-- end row -->
+                      </div>
+                <!-- container-fluid -->
+
+            </div>
+            <!-- <script type="text/javascript">
+                function check() {
+                    var dropdown = document.getElementById("type_promo");
+                    var current_value = dropdown.options[dropdown.selectedIndex].value;
+
+                    if (current_value == "information") {
+                        document.getElementById("jumlah").style.display = "block";
+                    }
+                    else {
+                        document.getElementById("jumlah").style.display = "none";
+                    }
+                }
+            </script> -->
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        loadMasterOutlet();
+        $("form#form-data").submit(function(e) {
+            $("#datepicker").datepicker({          
+                format: 'YYYY-MM-DD' //can also use format: 'dd-mm-yyyy'     
+            });
+            console.log($('#datepicker').val());
+            var konfirmasi = confirm("Simpan Data?");
+            if(konfirmasi){
+                e.preventDefault();    
+                var formData = new FormData(this);
+                // formData.append('informasi',$('#elm1').val());
+                console.log(formData);
+                $.ajax({
+                    url : '<?php echo URL_API;?>/api/v1/promo' ,
+                    beforeSend: function(req) {
+                        req.setRequestHeader("Authorization", "Bearer <?php echo $this->session->userdata('sess_token');?>");
+                        req.setRequestHeader("ax_users_id", "<?php echo $this->session->userdata('sess_id');?>");
+                    },
+                    type: 'POST',
+                    data: formData,
+                    dataType : 'json',
+                    success : function(response){
+                        console.log(response);
+                        if(response.statusCode == 200){
+                            // createAlert("notif_edit","success","Add Promo Success");
+                            alert("Add Promo Success!");
+                            window.location.replace('<?php echo site_url('admin/add_promo'); ?>');
+                        }else{
+                            alert(response.message);
+                        }
+                    },
+                    error : function(response){
+                        alert("Error, terjadi kendala saat tambah Promo!");
+                    },
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                });
+            }else{
+                return false;
+            }
+        });
+    });
+    
+    function loadMasterOutlet(){
+        $.ajax({
+            url : '<?php echo URL_API;?>/api/v1/outlet-list' ,
+            headers: {
+                        "Authorization": "Bearer <?php echo $this->session->userdata('sess_token');?>",
+                        "ax_users_id": "<?php echo $this->session->userdata('sess_id');?>",
+                        "Content-Type": "application/json"
+                      },
+            method : 'GET',
+
+            success : function(response){
+                console.log(response);
+                if(response.statusCode == 200){
+                    let items = response.result;
+                    $.each(items,function(i,item){
+                        $("#id_master_outlets").append($('<option>',{
+                            value : item.id_master_outlets,text : item.nama_outlets
+                        }));
+                    }) ;
+
+                }else{
+                    createAlert("notif_edit","warning",response.statusDescription);
+                }
+            },
+            error : function(response){
+                createAlert("notif_edit","warning","Terjadi kendala saat terhubung ke server");
+            },
+        });
+    }
+</script>

@@ -49,6 +49,33 @@ class Admin extends CI_Controller {
 		
 	}
 	
+	public function tambah_mutasi()	{
+		$this->load->view('admin/header_admin');
+		$this->load->view('admin/tambah_mutasi');
+		$this->load->view('admin/footer');
+		
+	}
+
+	public function list_kk()	{
+		$this->load->view('admin/header_admin');
+		$this->load->view('admin/list_kk');
+		$this->load->view('admin/footer');
+		
+	}
+
+	public function list_mutasi()	{
+		$this->load->view('admin/header_admin');
+		$this->load->view('admin/list_mutasi');
+		$this->load->view('admin/footer');
+		
+	}
+
+	public function list_riwayat()	{
+		$this->load->view('admin/header_admin');
+		$this->load->view('admin/list_riwayat');
+		$this->load->view('admin/footer');
+		
+	}
 
 	public function logout(){
 		if($this->session->userdata("sess_username")){

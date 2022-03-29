@@ -27,106 +27,106 @@
         
                                         <form id="form-data" enctype="multipart/form-data">
                                             <div class="form-group">
-                                                <label for="example-text-input" class="col-sm-2 col-form-label">Kode Keluarga (Nomor KK)*</label>
+                                                <label for="example-text-input" class="col-sm-3 col-form-label">Kode Keluarga (Nomor KK)*</label>
                                                 <div class="col-sm-10">
-                                                    <input type="hidden" class="form-control" id="id_web_role" name="id_web_role" value="1">
+                                                    <input type="number" class="form-control" id="nama_promo" name="nama_promo">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-sm-3 col-form-label">Nama Kepala Keluarga*</label>
+                                                <div class="col-sm-10">
                                                     <input type="text" class="form-control" id="nama_promo" name="nama_promo">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="example-text-input" class="col-sm-2 col-form-label">Nama Kepala Keluarga*</label>
-                                                <div class="col-sm-10">
-                                                    <input type="hidden" class="form-control" id="id_web_role" name="id_web_role" value="1">
-                                                    <input type="text" class="form-control" id="nama_promo" name="nama_promo">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="example-text-input" class="col-sm-2 col-form-label">Alamat</label>
+                                                <label for="example-text-input" class="col-sm-2 col-form-label">Alamat*</label>
                                                 <div class="col-sm-10">
                                                     
                                                     <textarea name="deskripsi_promo" id="deskripsi_promo" class="form-control" rows="4"></textarea>
                                                 </div>
                                             </div>
-                                            <div>
-                                                <label for="example-text-input" class="col-sm-2 col-form-label">Term_Condition</label>
-                                                <div class="col-sm-10">
-                                                    
-                                                    <textarea id="elm1" name="tnc_promo"></textarea>
-                                                </div>
-                                            </div>
+                                            
                                             <div class="form-group">
-                                                <label for="example-text-input" class="col-sm-2 col-form-label">File</label>
-                                                <div class="col-sm-5">
-                                                    
-                                                    <input type="file" class="filestyle" name="gambar" data-buttonname="btn-secondary">
-                                                    <label for="example-text-input" class="col-sm-8 col-form-label" style="color: red;">*Maximum upload file size: 2 MB & resolution : 1024x768 px</label>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-2 col-form-label">Promo Type</label>
-                                                <div class="col-sm-3">
-                                                    <select class="form-control" id="jenis_promo" name="jenis_promo">
-                                                        <option>Select</option>
-                                                        <option value="information">Information</option>
-                                                        <option value="conditional">Conditional promos</option>
-                                                        
-                                                        
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="example-text-input" class="col-sm-2 col-form-label">Date</label>
-                                                <div class="col-sm-5">
-                                                    <input type="text" class="form-control" id="input_date" name="input_date" placeholder="Every Day, 10 am - 2 pm">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="example-text-input" class="col-sm-2 col-form-label">Posting Period</label>
+                                                <!-- <label for="example-text-input" class="col-sm-2 col-form-label">Posting Period</label> -->
                                                 <div class="row" style="margin-left: 0px">
                                                     <div class="col-sm-3">
-                                                        <label>Start Date</label>
+                                                        <label>RT*</label>
                                                         <div>
                                                             <div class="input-group">
-                                                                <input type="text" class="form-control" placeholder="yyyy-mm-dd" id="datepicker" name="tanggal_upload">
-                                                                <div class="input-group-append">
-                                                                    <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
-                                                                </div>
+                                                                <input type="number" class="form-control" placeholder="" id="" name="rt">
+                                                               
                                                             </div><!-- input-group -->
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-3">
-                                                        <label>End Date</label>
+                                                        <label>RW*</label>
                                                         <div>
                                                             <div class="input-group">
-                                                                <input type="text" class="form-control" placeholder="yyyy-mm-dd" id="datepicker1" name="tanggal_expired">
-                                                                <div class="input-group-append">
-                                                                    <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
-                                                                </div>
+                                                                <input type="number" class="form-control" placeholder="" id="" name="rw">
+                                                                
                                                             </div><!-- input-group -->
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- <div class="form-group">
-                                                <label class="col-sm-2 col-form-label">Highlight</label>
-                                                <div class="col-sm-3">
-                                                    <select class="form-control" id="highlight" name="highlight">
-                                                        <option>Select</option>
-                                                        <option value="true">True</option>
-                                                        <option value="false">False</option>
-                                                        
-                                                    </select>
-                                                </div>
-                                            </div> -->   
                                             <div class="form-group">
-                                                <label class="col-sm-2 col-form-label">Outlet</label>
-                                                <div class="col-sm-3">
-                                                    <select class="form-control" id="id_master_outlets" name="id_master_outlets">
-                                                        <option>Select</option>
-                                                        
-                                                    </select>
+                                                <label for="example-text-input" class="col-sm-3 col-form-label">Nama Dusun</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="nama_promo" name="nama_promo">
                                                 </div>
-                                            </div>   
+                                            </div>
+                                            <div class="form-group">
+                                                <!-- <label for="example-text-input" class="col-sm-2 col-form-label">Posting Period</label> -->
+                                                <div class="row" style="margin-left: 0px">
+                                                    <div class="col-sm-3">
+                                                        <label>Bulan*</label>
+                                                        <div>
+                                                            <div class="input-group">
+                                                                <input type="number" class="form-control" placeholder="" id="" name="rt">
+                                                               
+                                                            </div><!-- input-group -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <label>Tahun*</label>
+                                                        <div>
+                                                            <div class="input-group">
+                                                                <input type="number" class="form-control" placeholder="" id="" name="rw">
+                                                                
+                                                            </div><!-- input-group -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-sm-3 col-form-label">Nama Pengisi</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="nama_promo" name="nama_promo">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-sm-3 col-form-label">Pekerjaan</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="nama_promo" name="nama_promo">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-sm-3 col-form-label">Jabatan</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="nama_promo" name="nama_promo">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-sm-2 col-form-label">Sumber data</label>
+                                                <div class="col-sm-10">
+                                                    
+                                                    <textarea name="deskripsi_promo" id="deskripsi_promo" class="form-control" rows="4"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-sm-4 col-form-label">* Field yang wajib diisi</label>
+
+                                            </div> 
                                             <button type="submit" class="btn btn-success" onclick="tinyMCE.triggerSave(true,true);">Submit</button>
                                             
                                         </form>

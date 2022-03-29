@@ -147,7 +147,7 @@
                                     
                                 </li>  
                                 <li>
-                                    <a href="<?php echo site_url('admin/');?>" class="waves-effect">
+                                    <a href="<?php echo site_url('admin/list_riwayat');?>" class="waves-effect">
                                         <i class="ti-clipboard"></i> <span> Riwayat </span>
                                     </a>
                                 </li>
